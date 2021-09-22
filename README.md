@@ -9,6 +9,10 @@
 - Price is at least 3 times the one year low
 - 200 day moving average has consistent upward slope for at least half a year
 
+Referrence(http://thetraderdiaries.blogspot.com/2016/03/three-trading-lessons-from-trade-like.html):
+![](https://4.bp.blogspot.com/-Sbd60ef_S4Y/VtbaITrI-YI/AAAAAAAABqc/V31wAawRnyU/s1600/IMG_0077.PNG)
+
+
 ### Usage
 
 #### Requirements
