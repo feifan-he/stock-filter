@@ -78,6 +78,7 @@ filteredTickersStr = ",".join(filteredTickers)
 
 print(f'''total: {len(stock_charts)}
 filtered: {filteredCount}
+url: http://feifanhe.com/charts/?t={filteredTickersStr}
 finviz url: https://finviz.com/screener.ashx?v=211&t={filteredTickersStr}
 charts: {output_path + '/index.html'}
 tickers: {filteredTickersStr}''')
