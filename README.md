@@ -26,5 +26,6 @@ Referrence -> http://thetraderdiaries.blogspot.com/2016/03/three-trading-lessons
 - Download the results as excel, and copy all the tickers to screener.txt
 - Run the stock filter: **python3 screener.py**
 - The screener.py will generate a list of stocks with the filters
-- A folder containing index.html will be generated for the filtered stocks at the output_path specified ealier
-- Also a link is generated similar to [https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA](https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA)
+- 2 links will be generated similar to
+  - [https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA](https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA)
+  - [http://feifanhe.com/charts/?t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA](http://feifanhe.com/charts/?t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA)
