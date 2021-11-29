@@ -21,11 +21,16 @@ Referrence -> http://thetraderdiaries.blogspot.com/2016/03/three-trading-lessons
 
 #### Instructions
 - Install libraries: **pip3 install -r requirements.txt**
-- Change the output_path at the top of the screener.py script, this will be the location where the candle stick charts will be generated for offline use
-- On a paid Investor's Business Daily account, filter stocks with 85+ IBD rating
+- On a paid Investor's Business Daily account, filter stocks with with the following criterias
+  - RS Rating: 86－99
+  - Spon Rating: A,B,C
+  - Price: 12.00－1000000000.00
+  - Vol. (1000s): 500－1000000000
+  - Vol- 50 Day Avg. (1000s): 500－1000000000
+  - Last Qtr Sales % Chg.: 5－1000000000
 - Download the results as excel, and copy all the tickers to screener.txt
 - Run the stock filter: **python3 screener.py**
-- The screener.py will generate a list of stocks with the filters
-- 2 links will be generated similar to
+- The screener.py will filter stocks continue to matching all criteria from the Mark Minervini's VCP check list
+- 2 links will be generated similar to:
   - [https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA](https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA)
   - [http://feifanhe.com/charts/?t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA](http://feifanhe.com/charts/?t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA)
