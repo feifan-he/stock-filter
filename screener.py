@@ -1,6 +1,5 @@
 from pandas.tseries.offsets import BDay
 import numpy as np
-import os
 import re
 from finance import *
 
@@ -14,7 +13,6 @@ Vol- 50 Day Avg. (1000s): 500－1000000000
 Last Qtr Sales % Chg.: 5－1000000000
 """
 
-output_path = '/Users/daveli/OneDrive/Swing/' + datetime.now().strftime("%Y_%m_%d")
 avg200_pos_period = 20 * 6
 filters = [
     "price > avg(150) > avg(200)",
@@ -27,22 +25,15 @@ filters = [
 save = False
 replace = True
 create_charts = True
-os.makedirs(output_path, exist_ok=True)
 start = datetime.now() - BDay(200 + int(avg200_pos_period) + 40)
 end = datetime.now()
-stockData = "stockData.pickle"
-stockDataPath = os.path.join(output_path, stockData)
 pd.options.mode.chained_assignment = None
 bdays_year = 261
 
 stocks = open('./screener.txt').read().strip().split('\n')
-if not replace and stockData in os.listdir(output_path):
-    stock_charts = pd.read_pickle(stockDataPath)
-else:
-    if os.path.exists(stockDataPath): os.remove(stockDataPath)
-    print('Download Tickers:')
-    stock_charts = get_stock_data(stocks, period1=int(start.timestamp()), period2=int(end.timestamp()), interval='1d')
-    if save: stock_charts.to_pickle(stockDataPath)
+
+print('Download Tickers:')
+stock_charts = get_stock_data(stocks, period1=int(start.timestamp()), period2=int(end.timestamp()), interval='1d')
 
 filteredCount = 0
 filteredTickers = []
@@ -79,5 +70,5 @@ print(f'''total: {len(stock_charts)}
 filtered: {filteredCount}
 url: http://feifanhe.com/charts/?t={filteredTickersStr}
 finviz url: https://finviz.com/screener.ashx?v=211&t={filteredTickersStr}
-charts: {output_path + '/index.html'}
 tickers: {filteredTickersStr}''')
+
