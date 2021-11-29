@@ -21,16 +21,10 @@ Referrence -> http://thetraderdiaries.blogspot.com/2016/03/three-trading-lessons
 
 #### Instructions
 - Install libraries: **pip3 install -r requirements.txt**
-- On a paid Investor's Business Daily account, filter stocks with with the following criterias
-  - RS Rating: 86－99
-  - Spon Rating: A,B,C
-  - Price: 12.00－1000000000.00
-  - Vol. (1000s): 500－1000000000
-  - Vol- 50 Day Avg. (1000s): 500－1000000000
-  - Last Qtr Sales % Chg.: 5－1000000000
+- On a paid Investor's Business Daily account, filter stocks with with 85+ RS rating
 - Download the results as excel, and copy all the tickers to screener.txt
 - Run the stock filter: **python3 screener.py**
-- The screener.py will filter stocks continue to matching all criteria from the Mark Minervini's VCP check list
+- The screener.py will filter stocks to matching all criteria from the Mark Minervini's VCP check list
 - 2 links will be generated similar to:
   - [https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA](https://finviz.com/screener.ashx?v=211&t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA)
   - [http://feifanhe.com/charts/?t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA](http://feifanhe.com/charts/?t=BNTX,CELH,LPI,OLN,SBLK,BCRX,ATKR,CROX,RVLV,XEC,INMD,THC,SBNY,SNAP,WLL,TRGP,LTHM,MRNA)
