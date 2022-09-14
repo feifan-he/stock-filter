@@ -1,7 +1,7 @@
 # Stock Filter
 
 
-### Filter Based on Mark Minervini's Pivot Volatility Contraction PatternCancel changes
+### Filter Based on Mark Minervini's Pivot Volatility Contraction Pattern
 - 200 day moving average has consistent upward slope for at least half a year
 - Price greater than 150 day average price
 - 150 day average price greater than 200 day average price
